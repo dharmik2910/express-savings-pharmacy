@@ -1,0 +1,327 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  /* ============================================================
+     Express Savings Pharmacy — Brand Theme
+     Logo Colors:
+       Gold/Yellow  : #E8B84B  (EXPRESS text)
+       Brand Green  : #22A83E  ($AVING$ text)
+       Charcoal     : #1A1A1A  (PHARMACY text & icon)
+       White        : #FFFFFF  (background)
+  ============================================================ */
+  --background: oklch(0.98 0 0);
+  --foreground: oklch(0.11 0 0);
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.11 0 0);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.11 0 0);
+
+  /* Primary: Charcoal #1A1A1A — used for buttons, headings, nav */
+  --primary: oklch(0.17 0 0);
+  --primary-foreground: oklch(1 0 0);
+
+  /* Secondary: Brand Green #22A83E */
+  --secondary: oklch(0.59 0.16 144);
+  --secondary-foreground: oklch(1 0 0);
+
+  --muted: oklch(0.93 0 0);
+  --muted-foreground: oklch(0.50 0 0);
+
+  /* Accent: Brand Gold #E8B84B */
+  --accent: oklch(0.80 0.12 82);
+  --accent-foreground: oklch(0.11 0 0);
+
+  --destructive: oklch(0.577 0.245 27.325);
+  --destructive-foreground: oklch(1 0 0);
+  --border: oklch(0.91 0 0);
+  --input: oklch(0.97 0 0);
+  --ring: oklch(0.59 0.16 144);
+
+  /* Chart colors — green/gold brand palette */
+  --chart-1: oklch(0.59 0.16 144);
+  --chart-2: oklch(0.80 0.12 82);
+  --chart-3: oklch(0.50 0.13 144);
+  --chart-4: oklch(0.70 0.10 82);
+  --chart-5: oklch(0.17 0 0);
+
+  --radius: 0.625rem;
+  --sidebar: oklch(0.985 0 0);
+  --sidebar-foreground: oklch(0.145 0 0);
+  --sidebar-primary: oklch(0.17 0 0);
+  --sidebar-primary-foreground: oklch(0.985 0 0);
+  --sidebar-accent: oklch(0.97 0 0);
+  --sidebar-accent-foreground: oklch(0.17 0 0);
+  --sidebar-border: oklch(0.922 0 0);
+  --sidebar-ring: oklch(0.59 0.16 144);
+}
+
+.dark {
+  --background: oklch(0.10 0 0);
+  --foreground: oklch(0.97 0 0);
+  --card: oklch(0.15 0 0);
+  --card-foreground: oklch(0.97 0 0);
+  --popover: oklch(0.15 0 0);
+  --popover-foreground: oklch(0.97 0 0);
+  --primary: oklch(0.80 0.12 82);
+  --primary-foreground: oklch(0.10 0 0);
+  --secondary: oklch(0.65 0.16 144);
+  --secondary-foreground: oklch(0.10 0 0);
+  --muted: oklch(0.25 0 0);
+  --muted-foreground: oklch(0.72 0 0);
+  --accent: oklch(0.80 0.12 82);
+  --accent-foreground: oklch(0.10 0 0);
+  --destructive: oklch(0.577 0.245 27.325);
+  --destructive-foreground: oklch(0.98 0.001 70.08);
+  --border: oklch(0.25 0 0);
+  --input: oklch(0.20 0 0);
+  --ring: oklch(0.65 0.16 144);
+  --chart-1: oklch(0.65 0.16 144);
+  --chart-2: oklch(0.80 0.12 82);
+  --chart-3: oklch(0.55 0.13 144);
+  --chart-4: oklch(0.72 0.10 82);
+  --chart-5: oklch(0.85 0 0);
+  --sidebar: oklch(0.17 0 0);
+  --sidebar-foreground: oklch(0.985 0 0);
+  --sidebar-primary: oklch(0.80 0.12 82);
+  --sidebar-primary-foreground: oklch(0.10 0 0);
+  --sidebar-accent: oklch(0.25 0 0);
+  --sidebar-accent-foreground: oklch(0.985 0 0);
+  --sidebar-border: oklch(0.25 0 0);
+  --sidebar-ring: oklch(0.65 0.16 144);
+}
+
+@theme inline {
+
+  --font-sans: "Poppins", "Geist", "Geist Fallback", system-ui, sans-serif;
+  --font-serif: "Playfair Display", serif;
+  --font-mono: "Geist Mono", "Geist Mono Fallback";
+
+  /* Brand palette — use as bg-brand, text-ink, border-gold/30, etc. */
+  --color-brand: #22A83E;
+  --color-brand-dark: #1a8f32;
+  --color-gold: #E8B84B;
+  --color-ink: #1A1A1A;
+  --color-surface: #f6f7f4;
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+/* Endless horizontal scroll — track holds the list twice, so -50% loops seamlessly */
+@theme {
+  --animate-marquee: marquee 45s linear infinite;
+
+  @keyframes marquee {
+    from { transform: translateX(0); }
+    to   { transform: translateX(-50%); }
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans;
+  }
+}
+
+
+/* Custom animations */
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInScale {
+  from {
+    opacity: 0;
+    transform: scale(0.92);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -1000px 0;
+  }
+  100% {
+    background-position: 1000px 0;
+  }
+}
+
+@keyframes pulse-subtle {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.85;
+  }
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes glow {
+  0%,
+  100% {
+    box-shadow: 0 0 20px rgba(34, 168, 62, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 30px rgba(34, 168, 62, 0.5);
+  }
+}
+
+.animate-slideInUp {
+  animation: slideInUp 0.6s ease-out;
+}
+
+.animate-slideInDown {
+  animation: slideInDown 0.6s ease-out;
+}
+
+.animate-slideInLeft {
+  animation: slideInLeft 0.6s ease-out;
+}
+
+.animate-slideInRight {
+  animation: slideInRight 0.6s ease-out;
+}
+
+.animate-fadeInScale {
+  animation: fadeInScale 0.5s ease-out;
+}
+
+.animate-pulse-subtle {
+  animation: pulse-subtle 2s ease-in-out infinite;
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+.animate-glow {
+  animation: glow 2s ease-in-out infinite;
+}
+
+/* Premium Typography */
+.serif-heading {
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.hero-title {
+  font-size: 3.5rem;
+  line-height: 1.1;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2rem;
+  }
+}
+
+/* allow placeholder detection on iOS date */
+input[type="date"] {
+  position: relative;
+}
+
+@media (max-width: 640px) {
+  .last-circle,
+  .second-circle,
+  .center-circle {
+    display: none;
+  }
+}
