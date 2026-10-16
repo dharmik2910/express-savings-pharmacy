@@ -28,3 +28,5 @@ next-env.d.ts
 
 # editor local history
 .history/
+
+.vercel
