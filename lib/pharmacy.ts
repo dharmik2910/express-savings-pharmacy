@@ -17,7 +17,7 @@ export const PHARMACY = {
 
 // Set NEXT_PUBLIC_API_BASE in .env.development.local to test against a local backend
 export const API_BASE =
-  process.env.NEXT_PUBLIC_API_BASE || "https://rxflow-backend-1-ky18.onrender.com/api/mail";
+  process.env.NEXT_PUBLIC_API_BASE || "https://express-savings-backend.onrender.com/api/mail";
 
 // Opening hours in America/New_York. Days: 0 = Sun … 6 = Sat.
 const OPEN_DAYS = [1, 2, 3, 4, 5]; // Mon–Fri
