@@ -29,7 +29,7 @@ export default function Footer() {
             <div className="sm:col-span-3 lg:col-span-1">
               <div className="mb-4 flex h-14 w-full max-w-60 items-center">
                 <Image
-                  src="/express-savings-logo-light.png"
+                  src="/express-savings-logo-light.webp"
                   alt="Express Savings Pharmacy"
                   width={240}
                   height={40}

@@ -30,3 +30,7 @@ next-env.d.ts
 .history/
 
 .vercel
+
+# local backups (not deployed)
+/old-images/
+/old-united-icons/

@@ -1,4 +1,4 @@
-import pharmacistsImg from "@/app/about-us/about1.jpg";
+import pharmacistsImg from "@/app/about-us/about1.webp";
 import { Section, SectionHeader } from "@/components/section";
 import { HeartHandshake, ShieldCheck, UserCheck } from "lucide-react";
 import Image from "next/image";

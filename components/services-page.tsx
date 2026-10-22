@@ -1,6 +1,6 @@
-import capsulesImg from "@/app/ALLservice/service2.jpg";
-import pharmacistImg from "@/app/ALLservice/service3.jpg";
-import pharmacistsImg from "@/app/about-us/about1.jpg";
+import capsulesImg from "@/app/ALLservice/service2.webp";
+import pharmacistImg from "@/app/ALLservice/service3.webp";
+import pharmacistsImg from "@/app/about-us/about1.webp";
 import { SectionHeader } from "@/components/section";
 import { cn } from "@/lib/utils";
 import {
@@ -28,9 +28,9 @@ type Service = {
 
 // Every card has a photo; the tinted fade gives each its own look
 const services: Service[] = [
-  { icon: Pill, title: "Rx Refills", description: "Online, by phone, or in person — often same day.", variant: "dark", image: "/service1.jpg" },
-  { icon: Truck, title: "Free Delivery", description: "To your door anywhere in our Sicklerville area.", variant: "brand", image: "/1.jpg" },
-  { icon: Stethoscope, title: "Immunizations", description: "Flu, COVID, shingles and more. Walk-ins welcome.", variant: "light", image: "/C9R8PCC-2x-e1617767425910-qig6myet7rl98jxvek8uleit5vcznzkdk9tqigo988.jpg" },
+  { icon: Pill, title: "Rx Refills", description: "Online, by phone, or in person — often same day.", variant: "dark", image: "/service1.webp" },
+  { icon: Truck, title: "Free Delivery", description: "To your door anywhere in our Sicklerville area.", variant: "brand", image: "/1.webp" },
+  { icon: Stethoscope, title: "Immunizations", description: "Flu, COVID, shingles and more. Walk-ins welcome.", variant: "light", image: "/C9R8PCC-2x-e1617767425910-qig6myet7rl98jxvek8uleit5vcznzkdk9tqigo988.webp" },
   { icon: ClipboardList, title: "Generic Savings", description: "Affordable alternatives without cutting quality.", variant: "gold", image: capsulesImg },
   { icon: HeartPulse, title: "Chronic Care", description: "1-on-1 support for diabetes, blood pressure and more.", variant: "dark", image: pharmacistImg },
   { icon: ShieldCheck, title: "Insurance Help", description: "Most plans accepted, including Horizon NJ Health.", variant: "brand", image: pharmacistsImg },

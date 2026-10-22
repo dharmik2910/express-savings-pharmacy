@@ -62,19 +62,19 @@ const offers: { icon: LucideIcon; title: string; text: string; image: string | S
     icon: Leaf,
     title: "Vitamins & Supplements",
     text: "Daily nutrition matched to your health goals and your doctor's advice.",
-    image: "/r.png",
+    image: "/r.webp",
   },
   {
     icon: ClipboardList,
     title: "Generic Drug Plans",
     text: "Affordable alternatives that never compromise on quality or safety.",
-    image: "/service1.jpg",
+    image: "/service1.webp",
   },
   {
     icon: Stethoscope,
     title: "Vaccines & Immunizations",
     text: "Flu, shingles, travel and routine vaccines from certified pharmacists.",
-    image: "/vaccination.jpg",
+    image: "/vaccination.webp",
   },
 ];
 
@@ -126,7 +126,7 @@ function AboutHero() {
         <div className="relative mx-auto w-full max-w-lg lg:max-w-none">
           <div className="relative aspect-4/3 overflow-hidden rounded-3xl lg:aspect-auto lg:h-[min(36rem,calc(100svh-15rem))]">
             <Image
-              src="/4.gif"
+              src="/4.webp"
               alt="A pharmacist at Express Savings Pharmacy"
               fill
               priority
@@ -180,7 +180,7 @@ function StorySection() {
         {/* Photo height follows the screen on desktop so the whole section fits in view */}
         <div className="relative mx-auto aspect-4/3 w-full max-w-lg overflow-hidden rounded-3xl lg:aspect-auto lg:h-[min(36rem,calc(100svh-12rem))] lg:max-w-none">
           <Image
-            src="/1.jpg"
+            src="/1.webp"
             alt="Inside Express Savings Pharmacy"
             fill
             sizes="(min-width: 1024px) 45vw, 90vw"

@@ -90,7 +90,7 @@ export default function ServicesPage() {
             <div className="absolute -top-4 -right-4 w-full h-full rounded-[2rem] border-t-2 border-r-2 pointer-events-none z-0"
               style={{ borderColor: "#E8B84B" }} />
             <div className="relative z-10 rounded-[2rem] overflow-hidden shadow-2xl aspect-[4/3]">
-              <Image src="/1.jpg" alt="Pharmacy Services" fill className="object-cover" priority />
+              <Image src="/1.webp" alt="Pharmacy Services" fill className="object-cover" priority />
               <div className="absolute inset-x-0 bottom-0 h-24 pointer-events-none"
                 style={{ background: "linear-gradient(to top, rgba(10,20,11,0.7), transparent)" }} />
             </div>
@@ -175,7 +175,7 @@ export default function ServicesPage() {
             {/* Gold corner frame */}
             <div className="absolute -bottom-3 -left-3 w-full h-full rounded-3xl border-b-2 border-l-2 pointer-events-none z-10"
               style={{ borderColor: "#E8B84B" }} />
-            <Image src="/service1.jpg" alt="Pharmacy Care" fill className="object-cover" />
+            <Image src="/service1.webp" alt="Pharmacy Care" fill className="object-cover" />
           </div>
         </div>
       </section>

@@ -75,7 +75,7 @@ export default function Navigation() {
               }}
             >
               <Image
-                src="/express-savings-logo-light.png"
+                src="/express-savings-logo-light.webp"
                 alt="Express Savings Pharmacy"
                 width={320}
                 height={49}
